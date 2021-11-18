@@ -1,0 +1,106 @@
+* {
+    box-sizing: border-box;
+}
+  
+.container {
+    width: 100%;
+}
+
+/* Style form and form elements */
+.form-container {
+    width: 40%;
+    min-width: 400px;
+    margin: auto;
+    align-items: center;
+}
+  
+.form-container .form-item {
+    width: 100%;
+    min-width: 350px;
+    padding: 10px 20px;
+    text-align: center;
+    font-size: 15px;
+}
+  
+.form-container .form-item input, .form-container .form-item select {
+    width: 100%;
+    min-width: 350px;
+    border-radius: 5px;
+    border: 1px solid black;
+    font-size: 15px;
+}
+
+.form-container .form-item input, .form-container .form-item button {
+    width: 150px;
+    height: 40px;
+    border: 1px solid black;
+    background-color: rgb(24, 119, 29);
+    color: #fff;
+    border-radius: 5px;
+    font-size: 15px;
+}
+
+/* Style notes container and notes */
+.note-container {
+    clear: both;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: flex-start;
+    padding-top: 5%;
+}
+  
+.note-container .note-instance {
+    width: 20%;
+    position: relative;
+    z-index: 1;
+    margin: 1% 2%;
+    padding: 5%;
+    border-radius: 5px;
+    border: 2px solid black;
+    min-height: 150px;
+    min-width: 200px;
+}
+
+.note-container .note-instance button {
+    border-radius: 5px;
+    border: 1px solid black;
+    background-color: #fff;
+    font-size: 15px;
+    cursor: pointer;
+    position: absolute;
+    right: 5%;
+}
+
+.note-container .note-instance .edit-button {
+    bottom: 5%;
+    color: green;
+}
+  
+.note-container .note-instance .delete {
+    top: 5%;
+    color: red;
+}
+
+.note-container .note-instance p {
+    overflow-wrap: break-word;
+    word-break: break-all;
+}
+
+/* Handle colours of notes */
+.orange {
+    background-color: #ff6600;
+}
+  
+.pink {
+    background-color: #f700ff;
+}
+  
+.green {
+    background-color: #88ff00ce;
+}
+
+.yellow {
+    background-color: rgb(255, 238, 0);
+}

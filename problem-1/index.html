@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css" />
+    <title>Note App</title>
+</head>
+<body>
+    <div class="container">
+        <div class="form-container">
+            <form id="add-note">
+                <textarea class="form-item" id="note-text" 
+                placeholder="Enter a note" rows=5 cols=55 
+                required></textarea>
+                
+                <div class="form-item">
+                    <select id="note-color" required>
+                        <option value="">Select a color...</option>
+                        <option value="orange">Orange</option>
+                        <option value="pink">Pink</option>
+                        <option value="green">Green</option>
+                        <option value="yellow">Yellow</option>
+                    </select>
+                </div>
+
+                <div class="form-item">
+                    <button type="submit" id="add-button">Add note</button>
+                </div>
+            </form>
+        </div>
+        <div class="note-container">
+        </div>
+    </div>
+
+    <script src="https://npmcdn.com/@reactivex/rxjs@5.0.0-beta.3/dist/global/Rx.umd.js"></script>  
+    <script src="index.js"></script>
+</body>
+</html>
