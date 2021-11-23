@@ -42,7 +42,7 @@ function SimpleNoteApp() {
             const deleteNoteSource = Rx.Observable.fromEvent(deleteNote, 'click');
 
             // Subscribing the observable to respond to delete button clicked
-            deleteNoteSource.subscribe(event => {
+            deleteNoteSource.subscribe(() => {
                 self.deleteNote(note);
             });
 
@@ -51,7 +51,7 @@ function SimpleNoteApp() {
             const editNoteSource = Rx.Observable.fromEvent(editNote, 'click');
 
             // Subscribing the observable to respond to Edit button clicked
-            editNoteSource.subscribe(event => {
+            editNoteSource.subscribe(() => {
                 self.editNote(note);
             })
 
