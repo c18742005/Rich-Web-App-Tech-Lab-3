@@ -60,7 +60,7 @@ input {
     height: 25%;
 }
 
-#block, #stop-countdown {
+#block {
     display: inline-block;
 }
 
